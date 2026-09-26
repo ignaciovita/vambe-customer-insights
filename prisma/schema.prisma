@@ -1,0 +1,91 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Client {
+  id                   String                @id @default(uuid())
+  name                 String
+  email                String
+  phone                String
+  salesRep             String
+  meetingDate          DateTime
+  closed               Boolean
+  transcript           String                @db.Text
+  transcriptHash       String                @unique
+  industry             Industry?
+  painPoint            PainPoint?
+  requiredIntegrations RequiredIntegration[]
+  estimatedVolume      Int?
+  acquisitionChannel   AcquisitionChannel?
+  createdAt            DateTime              @default(now())
+
+  @@index([transcriptHash])
+  @@index([salesRep])
+  @@index([industry])
+  @@index([closed])
+}
+
+enum Industry {
+  RETAIL
+  ECOMMERCE
+  HEALTH_WELLNESS
+  GASTRONOMY_RESTAURANTS
+  FINANCE_INSURANCE
+  REAL_ESTATE
+  TRAVEL_HOSPITALITY
+  TELECOM_TECH
+  ENERGY_UTILITIES
+  EDUCATION
+  AUTOMOTIVE
+  LOGISTICS_TRANSPORT
+  SERVICES_B2B
+  OTHER
+}
+
+enum PainPoint {
+  APPOINTMENT_SCHEDULING
+  HIGH_VOLUME_INQUIRIES
+  ORDER_TRACKING_LOGISTICS
+  TECHNICAL_SUPPORT_TRIAGE
+  PRICING_AND_QUOTING
+  CATALOG_AND_AVAILABILITY
+  OFF_HOURS_ATTENTION
+  LEAD_QUALIFICATION
+  OTHER
+}
+
+enum AcquisitionChannel {
+  LINKEDIN
+  SEARCH_ENGINE
+  PEER_RECOMMENDATION
+  PODCAST_MEDIA
+  INDUSTRY_FAIR_EVENT
+  WEBINAR_ONLINE_EVENT
+  BLOG_SPECIALIZED_ARTICLE
+  SOCIAL_MEDIA_ORGANIC
+  OTHER
+}
+
+enum RequiredIntegration {
+  CRM
+  ERP_INVENTORY
+  SCHEDULING_CALENDAR
+  ORDER_MANAGEMENT_POS
+  TRACKING_GPS
+  LMS_EDUCATION
+  EHR_CLINICAL_RECORDS
+  WHATSAPP_MESSAGING
+  PAYMENTS_SUBSCRIPTION
+  EXTERNAL_APIS_GOV
+  OTHER
+}
