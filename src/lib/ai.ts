@@ -1,4 +1,4 @@
-import { google } from "@ai-sdk/google";
+import { groq } from "@ai-sdk/groq";
 import { generateText, Output } from "ai";
 import { classificationSchema, ClientClassification } from "./ai-schema";
 
@@ -6,7 +6,8 @@ export async function classifyTranscript(
   transcript: string
 ): Promise<ClientClassification> {
   const { output } = await generateText({
-    model: google("gemini-2.5-flash"),
+    // Usamos Gemma 2 a través de los chips LPU de Groq
+    model: groq("openai/gpt-oss-20b"),
     output: Output.object({
       schema: classificationSchema,
     }),
