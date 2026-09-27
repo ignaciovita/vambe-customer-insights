@@ -60,7 +60,7 @@ export function ClientsTable({ clients }: ClientsTableProps) {
         <div>
           <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
             <FileText className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-            Directorio de Clientes y Transcripciones
+            Tabla de Clientes y Transcripciones
           </h3>
           <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
             Muestra detallada de los registros clasificados por IA según los filtros activos.

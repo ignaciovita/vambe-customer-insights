@@ -32,7 +32,7 @@ export function KpiCards({ metrics }: KpiCardsProps) {
             {totalLeads.toLocaleString()}
           </div>
           <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-            Prospectos en el segmento actual
+            Total de prospectos
           </p>
         </div>
       </div>

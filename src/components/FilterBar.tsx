@@ -50,6 +50,11 @@ export function FilterBar({
 
   return (
     <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 shadow-xs space-y-3">
+      <div>
+        <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
+            Barra de Filtros
+        </h2>
+      </div>
       <div className="flex flex-col md:flex-row gap-3">
         {/* Buscador de texto */}
         <div className="relative flex-1">

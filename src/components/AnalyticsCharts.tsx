@@ -177,7 +177,7 @@ export function AnalyticsCharts({ clients }: AnalyticsChartsProps) {
           <div className="flex items-center gap-2">
             <PieIcon className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-              Canales de Origen (Lead Source)
+              ¿Cómo se enteró de Vambe? (Canal de Adquisición)
             </h3>
           </div>
           <span className="text-xs text-zinc-400 font-medium">Volumen</span>

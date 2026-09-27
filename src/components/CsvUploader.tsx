@@ -251,10 +251,10 @@ export function CsvUploader({ onSuccess }: CsvUploaderProps) {
           <div>
             <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
               <UploadCloud className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-              Ingesta de Transcripciones Comerciales
+              Ingesta de Datos
             </h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              Carga tu CSV de llamadas para deduplicar con SHA-256 y clasificar con IA (máx. {MAX_ALLOWED_ROWS} filas por sesión).
+              Carga tu CSV de reuniones comerciales para procesar las transcripciones con IA y almacenarlas en la base de datos.
             </p>
           </div>
 
