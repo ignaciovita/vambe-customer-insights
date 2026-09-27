@@ -90,22 +90,22 @@ Cada transcripción es analizada por el LLM y normalizada bajo 5 dimensiones cla
 #### 1. Industria (Industry):
 
 - Identifica el rubro operativo del cliente.
-- *Opciones:* ``RETAIL``, ``ECOMMERCE``, ``HEALTHCARE``, ``REAL_ESTATE``, ``FINANCE``, ``EDUCATION``, ``SERVICES``, ``LOGISTICS``, ``TECHNOLOGY``, ``OTHER``.
+- *Opciones:* ``RETAIL``, ``ECOMMERCE``, ``HEALTH_WELLNESS``, ``REAL_ESTATE``, ``FINANCE_INSURANCE``, ``EDUCATION``, ``SERVICES_B2B``, ``LOGISTICS_TRANSPORT``, ``TELECOM_TECH``, ``GASTRONOMY_RESTAURANTS``, ``TRAVEL_HOSPITALITY``, ``AUTOMOTIVE``, ``ENERGY_UTILITIES``, ``OTHER``.
 
 #### 2. Dolor Principal (PainPoint):
 
 - Identifica el cuello de botella que motivó la reunión comercial.
-- *Opciones:* ``HIGH_RESPONSE_TIME``, ``LOST_LEADS``, ``REPETITIVE_QUERIES``, ``LACK_OF_24_7_SUPPORT``, ``MANUAL_DATA_ENTRY``, ``POOR_CONVERSION``, ``SCALABILITY_LIMITS``, ``HIGH_SUPPORT_COSTS``, ``OTHER``.
+- *Opciones:* ``HIGH_VOLUME_INQUIRIES``, ``APPOINTMENT_SCHEDULING``, ``ORDER_TRACKING_LOGISTICS``, ``TECHNICAL_SUPPORT_TRIAGE``, ``PRICING_AND_QUOTING``, ``CATALOG_AND_AVAILABILITY``, ``OFF_HOURS_ATTENTION``, ``LEAD_QUALIFICATION``, ``OTHER``.
 
 #### 3. Canal de Adquisición (AcquisitionChannel)
 
 - Origen del prospecto detectado en la llamada.
-- *Opciones:* ``INBOUND_WEBSITE``, ``OUTBOUND_EMAIL``, ``LINKEDIN``, ``REFERRAL``, ``PAID_ADS``, ``EVENT_CONFERENCE``, ``PARTNER``, ``OTHER``.
+- *Opciones:* ``SEARCH_ENGINE``, ``PODCAST_MEDIA``, ``LINKEDIN``, ``PEER_RECOMMENDATION``, ``WEBINAR_ONLINE_EVENT``, ``INDUSTRY_FAIR_EVENT``, ``BLOG_SPECIALIZED_ARTICLE``, ``SOCIAL_MEDIA_ORGANIC``, ``OTHER``.
 
 #### 4. Integraciones Requeridas (RequiredIntegration):
 
 - Tecnologías y conectores solicitados explícitamente (clasificación multi-etiqueta).
-- *Opciones:* ``WHATSAPP``, ``HUBSPOT``, ``SALESFORCE``, ``ZOHO``, ``SHOPIFY``, ``WOOCOMMERCE``, ``CUSTOM_API``, ``ZAPIER``, ``SLACK``, ``GOOGLE_SHEETS``, ``OTHER``.
+- *Opciones:* ``WHATSAPP_MESSAGING``, ``CRM``, ``ERP_INVENTORY``, ``SCHEDULING_CALENDAR``, ``ORDER_MANAGEMENT_POS``, ``TRACKING_GPS``, ``LMS_EDUCATION``, ``EHR_CLINICAL_RECORDS``, ``PAYMENTS_SUBSCRIPTION``, ``EXTERNAL_APIS_GOV``, ``OTHER``.
 
 #### 5. Volumen Estimado (estimatedVolume):
 
